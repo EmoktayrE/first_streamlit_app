@@ -29,8 +29,6 @@ st.write('The user entered ', fruit_choice)
 
 
 
-
-
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
@@ -38,3 +36,10 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 # populate a new dataframe with the normalized json
 st.dataframe(fruityvice_normalized)
+
+
+
+
+
+
+import snowflake.connector
