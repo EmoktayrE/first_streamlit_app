@@ -54,8 +54,7 @@ except URLError as e:
       
       
       
-#dont run anything past here while we troubleshoot
-st.stop()
+
 
 
 st.header("The fruit load list contains:")
@@ -72,6 +71,8 @@ if st.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     st.dataframe(my_data_rows)
 
+    #dont run anything past here while we troubleshoot
+st.stop()
 #allow the end user to add a fruit to the list
 
 add_my_fruit = st.text_input('What fruit would you like to add?','enter fruit here')
