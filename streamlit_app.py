@@ -71,8 +71,7 @@ if st.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     st.dataframe(my_data_rows)
 
-    #dont run anything past here while we troubleshoot
-st.stop()
+
 
 
 
@@ -93,4 +92,5 @@ if st.button('Add a Fruit to the List'):
     st.text(back_from_function)
 st.write()
 
-
+#dont run anything past here while we troubleshoot
+st.stop()
